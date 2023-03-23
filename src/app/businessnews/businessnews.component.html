@@ -1,0 +1,20 @@
+
+<div class="container-fluid mt-5">
+
+    <h4 style="color: red;">Business News</h4>
+    <div class="row">
+        <div *ngFor="let i of businessdata" class="col-lg-3 mt-3 mb-3">
+
+            <div class="box" id="d1">
+                <img style="height: 150px;" src="{{i.urlToImage}}" width="100%">
+                <h5 class="mt-2 mb-2"
+                    style="white-space: nowrap;overflow:hidden;text-overflow: ellipsis;max-width:100ch;">{{i.title}}
+                </h5>
+                <p style="white-space: nowrap;overflow:hidden;text-overflow: ellipsis;max-width:100ch;">
+                    {{i.description}}</p>
+                <a href="{{i.url}}" target="_blank" class="btn btn-dark btn-sm mt-2">Read more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
